@@ -54,6 +54,7 @@ class mediaInfo(Resource):
 		# Using extractor to get the title and image size
 		extracted = extraction.Extractor().extract(html, source_url=imageurl)
 
+		# setting the ssl context to make the gte request
 		gcontext = ssl.SSLContext()
 
 		# Create request object
