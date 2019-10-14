@@ -62,6 +62,8 @@ Response will be in the format below
 
 **Download project from github reposiotory**
 
+Make a new directory and clone the project into that directory
+
 - `Clone the repo with git clone <git address>`
 
 
@@ -69,11 +71,13 @@ Response will be in the format below
 
 Build the docker image with the command below
 
-- `docker images build -t restapp .`
+- `docker images build -t <new directory name> .`
 
 Run container with command
 
-- `docker container run -p 5000:5000 -name <Image_name> restapp:latest`
+- `docker container run -p 5000:5000 -name <container_name> <new directory name>:latest`
+
+`The new directory name and container_name can be anything you like`
 
 Visit locahost:5000 to view the Api results
 
