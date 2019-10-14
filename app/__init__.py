@@ -83,7 +83,7 @@ class mediaInfo(Resource):
 				"size":{
 					"bytes": str(len(img.fp.read()))
 				},
-				"dimension":{
+				"dimensions":{
 					"width": img.size[0],
 					"height": img.size[1]
 				}

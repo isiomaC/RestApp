@@ -19,7 +19,7 @@ Response will be in the format below
 
 ```json
 {
-	"data": " Data Object containing information about the response",
+	"data": " Data object containing information about the response",
 	"message":" Message about the request" 
 }
 ```
@@ -34,7 +34,7 @@ Response will be in the format below
 
 ```json
 {
-	"data": " Data Object containing information about the response",
+	"data": " Data object containing information about the response",
 	"message":" Message about the request" 
 }
 ```
@@ -50,7 +50,7 @@ Response will be in the format below
 
 ```json
 {
-	"data": " Data Object containing information about the response",
+	"data": " Data object containing information about the response",
 	"message":" Message about the request" 
 }
 ```
@@ -64,18 +64,18 @@ Response will be in the format below
 
 Make a new directory and clone the project into that directory
 
-- `Clone the repo with git clone <git address>`
+- `git clone <git address>`
 
 
 **Build and Run docker container**
 
 Build the docker image with the command below
 
-- `docker images build -t <new directory name> .`
+- `docker images build -t <new_directory_name> .`
 
 Run container with command
 
-- `docker container run -p 5000:5000 -name <container_name> <new directory name>:latest`
+- `docker container run -p 5000:5000 -name <container_name> <new_directory_name>:latest`
 
 `The new directory name and container_name can be anything you like`
 
